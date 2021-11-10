@@ -16,7 +16,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### What I learned
 
-- using <section> selector if i will desgin full page layout, but if just a component using <div> is better
+- use section selector if i will desgin full page layout, but if just a component using div selector is better.
 
 ## Author
 
