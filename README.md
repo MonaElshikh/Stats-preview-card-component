@@ -20,7 +20,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Author
 
-- Website - [Add your name here](https://monaelshikh.github.io/Stats-preview-card-component/)
+- Website - [MonaElshikh](https://monaelshikh.github.io/Stats-preview-card-component/)
 - Frontend Mentor - [@MonaElshikh](https://www.frontendmentor.io/profile/MonaElshikh)
 
 ## Acknowledgments
