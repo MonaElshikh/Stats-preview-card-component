@@ -6,7 +6,7 @@
 :root {
   --main-background-color: hsl(233, 47%, 7%);
   --card-background-color: hsl(244, 38%, 16%);
-  --overly-color: hsl(278deg, 43%, 43%);
+  --overly-color: hsl(278deg 52% 57%);
   --main-head-stats-color: hsl(180 7% 95%);
   --main-paragraph-color: hsl(24 10% 58%);
   --stat-heading-color: hsla(0, 0%, 100%, 0.1);
@@ -61,23 +61,58 @@ body {
 .stats-card .data > p {
   color: var(--main-paragraph-color);
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 1.5;
 }
 .stats-card .data > ul {
+  display: block;
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 25px 0 0;
 }
-.stats-card .data > ul > li {
+.stats-card .data > ul > li > span {
+  display: block;
 }
-.stats-card .data > ul p:first-child {
+.stats-card .data > ul span:first-child {
   color: var(--main-head-stats-color);
   font-weight: 700;
+  margin: 15px 0 8px;
 }
-.stats-card .data > ul p:last-child {
+.stats-card .data > ul span:last-child {
   color: var(--main-paragraph-color);
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 700;
+}
+/* Start Medis */
+@media (min-width: 768px) {
+  .stats-card {
+    display: flex;
+    width: 650px;
+  }
+  .stats-card .top-img,
+  .stats-card .data {
+    flex-basis: 50%;
+  }
+  .stats-card .top-img::before,
+  .stats-card .top-img > img {
+    border-top-right-radius: var(--border-raduis);
+    border-bottom-right-radius: var(--border-raduis);
+    border-top-left-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .stats-card .data {
+    order: -1;
+    padding: 40px;
+  }
+  .stats-card .data > h1,
+  .stats-card .data > p,
+  .stats-card .data > ul span:first-child {
+    text-align: left;
+  }
+  .stats-card .data > ul {
+    display: flex !important;
+  }
 }
