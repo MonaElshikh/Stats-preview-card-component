@@ -22,7 +22,7 @@ body {
   height: 100vh;
 }
 .stats-card {
-  width: 300px;
+  width: 350px;
   background-color: var(--card-background-color);
   border-radius: var(--border-raduis);
   margin: auto;
@@ -52,7 +52,7 @@ body {
   padding: 25px;
 }
 .stats-card .data > h1 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: var(--main-head-stats-color);
 }
@@ -62,7 +62,7 @@ body {
 .stats-card .data > p {
   color: var(--main-paragraph-color);
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
 }
 .stats-card .data > ul {
@@ -90,8 +90,8 @@ body {
 @media (min-width: 768px) {
   .stats-card {
     display: flex !important;
-    width: 700px;
-    height: 320px;
+    width: 800px;
+    height: 350px;
   }
   .stats-card .top-img,
   .stats-card .data {
@@ -107,10 +107,16 @@ body {
   }
   .stats-card .data {
     order: -1;
-    padding: 10px 40px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .stats-card .data > h1 {
+    font-size: 26px;
+  }
+  .stats-card .data > p {
+    font-size: 14px;
   }
   .stats-card .data > h1,
   .stats-card .data > p,
