@@ -22,7 +22,7 @@ body {
   height: 100vh;
 }
 .stats-card {
-  width: 250px;
+  width: 300px;
   background-color: var(--card-background-color);
   border-radius: var(--border-raduis);
   margin: auto;
@@ -91,6 +91,7 @@ body {
   .stats-card {
     display: flex !important;
     width: 700px;
+    height: 320px;
   }
   .stats-card .top-img,
   .stats-card .data {
@@ -106,7 +107,10 @@ body {
   }
   .stats-card .data {
     order: -1;
-    padding: 40px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .stats-card .data > h1,
   .stats-card .data > p,
