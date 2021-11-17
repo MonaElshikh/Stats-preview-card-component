@@ -13,18 +13,19 @@
   --border-raduis: 10px;
 }
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Inter", "Lexend Deca", sans-serif;
   font-size: 15px;
   background-color: var(--main-background-color);
-  margin: 140px auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: flex !important;
+  height: 100vh;
 }
 .stats-card {
   width: 250px;
   background-color: var(--card-background-color);
   border-radius: var(--border-raduis);
+  margin: auto;
 }
 .stats-card .top-img {
   position: relative;
@@ -88,8 +89,8 @@ body {
 /* Start Medis */
 @media (min-width: 768px) {
   .stats-card {
-    display: flex;
-    width: 650px;
+    display: flex !important;
+    width: 700px;
   }
   .stats-card .top-img,
   .stats-card .data {
